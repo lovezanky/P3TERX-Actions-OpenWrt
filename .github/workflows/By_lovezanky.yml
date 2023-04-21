@@ -71,13 +71,7 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
       
- #     
- Check failure on line 77 in .github/workflows/By-lovezanky.yml
 
-GitHub Actions
-/ .github/workflows/By-lovezanky.yml
-Invalid workflow file
-You have an error in your yaml syntax on line 77
     - name: Generate configuration file
       run: |
         rm -f ./.config*
