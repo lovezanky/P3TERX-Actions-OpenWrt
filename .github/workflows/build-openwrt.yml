@@ -111,7 +111,8 @@ jobs:
           # ===============================================================
           # 
         sed -i 's/^[ \t]*//g' ./.config
-       # make defconfig      
+        cd openwrt
+        make defconfig      
 
     - name: Load custom configuration
       run: |
