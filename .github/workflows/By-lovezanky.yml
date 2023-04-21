@@ -74,7 +74,7 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
       
-      
+ #     
     - name: Generate configuration file
       run: |
         rm -f ./.config*
@@ -87,7 +87,7 @@ jobs:
         CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
         CONFIG_KERNEL_BUILD_DOMAIN="Azure"
         CONFIG_DEFAULT_luci-app-accesscontrol=y
-#        CONFIG_DEFAULT_luci-app-adbyby-plus=y
+#       CONFIG_DEFAULT_luci-app-adbyby-plus=y
         CONFIG_DEFAULT_luci-app-arpbind=y
         CONFIG_DEFAULT_luci-app-autoreboot=y
         CONFIG_DEFAULT_luci-app-cpufreq=y
