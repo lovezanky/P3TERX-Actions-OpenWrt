@@ -115,6 +115,12 @@ jobs:
         
         # 一个实时性能监控工具，可监控系统资源、网络流量等
         CONFIG_DEFAULT_luci-app-netdata=y
+        
+        # 一个应用程序上网过滤软件，可控制哪些应用不能联网
+        CONFIG_DEFAULT_luci-app-oaf=y
+        
+        # 自动选择DNS
+        CONFIG_PACKAGE_luci-app-smartdns=y
 
         # Root filesystem images
 
@@ -135,7 +141,7 @@ jobs:
         CONFIG_ISO_IMAGES is not set
         # CONFIG_QCOW2_IMAGES is not set
         # CONFIG_VDI_IMAGES is not set
-        CONFIG_VMDK_IMAGES is not set
+        CONFIG_VMDK_IMAGES=y
         CONFIG_VHDX_IMAGES=y
         # CONFIG_TARGET_IMAGES_GZIP=y
 
