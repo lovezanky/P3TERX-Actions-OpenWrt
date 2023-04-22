@@ -114,10 +114,10 @@ jobs:
         CONFIG_DEFAULT_luci-proto-bonding=y
         
         # 一个实时性能监控工具，可监控系统资源、网络流量等
-        CONFIG_DEFAULT_luci-app-netdata=y
+        CONFIG_PACKAGE_luci-app-netdata=y
         
         # 一个应用程序上网过滤软件，可控制哪些应用不能联网
-        CONFIG_DEFAULT_luci-app-oaf=y
+        CONFIG_PACKAGE_luci-app-oaf=y
         
         # 自动选择DNS
         CONFIG_PACKAGE_luci-app-smartdns=y
