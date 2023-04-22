@@ -112,6 +112,9 @@ jobs:
         CONFIG_DEFAULT_luci-app-wireguard=y
         CONFIG_DEFAULT_luci-newapi=y
         CONFIG_DEFAULT_luci-proto-bonding=y
+        
+        # 一个实时性能监控工具，可监控系统资源、网络流量等
+        CONFIG_DEFAULT_luci-app-netdata=y
 
         # Root filesystem images
 
@@ -129,10 +132,10 @@ jobs:
         # CONFIG_GRUB_BOOTOPTS=""
         # CONFIG_GRUB_TIMEOUT="0"
         # CONFIG_GRUB_TITLE="OpenWrt"
-        # CONFIG_ISO_IMAGES is not set
+        CONFIG_ISO_IMAGES is not set
         # CONFIG_QCOW2_IMAGES is not set
         # CONFIG_VDI_IMAGES is not set
-        # CONFIG_VMDK_IMAGES is not set
+        CONFIG_VMDK_IMAGES is not set
         CONFIG_VHDX_IMAGES=y
         # CONFIG_TARGET_IMAGES_GZIP=y
 
